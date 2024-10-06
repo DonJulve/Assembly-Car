@@ -1,0 +1,4 @@
+Dependencies for Project 'prac5', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x62AB9C8E)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips--pd "__UVISION_VERSION SETA 526"--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\prac5.s)(0x62AC6F6E)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips--pd "__UVISION_VERSION SETA 526"--list .\prac5.lst --xref -o .\prac5.o --depend .\prac5.d)
+F (.\rand.s)(0x55312DCD)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips--pd "__UVISION_VERSION SETA 526"--list .\rand.lst --xref -o .\rand.o --depend .\rand.d)

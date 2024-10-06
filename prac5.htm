@@ -1,0 +1,128 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\prac5.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\prac5.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri Jun 17 14:11:28 2022
+<BR><P>
+<H3>Maximum Stack Usage =          0 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[8]">inicio</a>
+ <LI><a href="#[b]">srand</a>
+ <LI><a href="#[c]">rand</a>
+ <LI><a href="#[1]">RSE_Undef</a>
+ <LI><a href="#[3]">RSE_PAbt</a>
+ <LI><a href="#[4]">RSE_DAbt</a>
+ <LI><a href="#[5]">RSE_IRQ</a>
+ <LI><a href="#[6]">RSE_FIQ</a>
+ <LI><a href="#[0]">RSE_Reset</a>
+ <LI><a href="#[2]">RSE_SWI</a>
+ <LI><a href="#[7]">SO4</a>
+ <LI><a href="#[9]">RSI_teclado</a>
+ <LI><a href="#[a]">RSI_timer</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[1]">RSE_Undef</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1]">RSE_Undef</a><BR>
+ <LI><a href="#[3]">RSE_PAbt</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3]">RSE_PAbt</a><BR>
+ <LI><a href="#[4]">RSE_DAbt</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[4]">RSE_DAbt</a><BR>
+ <LI><a href="#[5]">RSE_IRQ</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[5]">RSE_IRQ</a><BR>
+ <LI><a href="#[6]">RSE_FIQ</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[6]">RSE_FIQ</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[4]">RSE_DAbt</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[6]">RSE_FIQ</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[5]">RSE_IRQ</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[3]">RSE_PAbt</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[0]">RSE_Reset</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[2]">RSE_SWI</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[1]">RSE_Undef</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[9]">RSI_teclado</a> from prac5.o(codigo) referenced from prac5.o(codigo)
+ <LI><a href="#[a]">RSI_timer</a> from prac5.o(codigo) referenced from prac5.o(codigo)
+ <LI><a href="#[7]">SO4</a> from startup.o(RESET) referenced from startup.o(RESET)
+ <LI><a href="#[8]">inicio</a> from prac5.o(codigo) referenced from startup.o(RESET)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[8]"></a>inicio</STRONG> (ARM, 0 bytes, Stack size unknown bytes, prac5.o(codigo))
+<BR><BR>[Calls]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;srand
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rand
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[b]"></a>srand</STRONG> (ARM, 4 bytes, Stack size unknown bytes, rand.o(codigo))
+<BR><BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inicio
+</UL>
+
+<P><STRONG><a name="[c]"></a>rand</STRONG> (ARM, 4 bytes, Stack size unknown bytes, rand.o(codigo))
+<BR><BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inicio
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[1]"></a>RSE_Undef</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RSE_Undef
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RSE_Undef
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[3]"></a>RSE_PAbt</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RSE_PAbt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RSE_PAbt
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[4]"></a>RSE_DAbt</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RSE_DAbt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RSE_DAbt
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[5]"></a>RSE_IRQ</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RSE_IRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RSE_IRQ
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[6]"></a>RSE_FIQ</STRONG> (ARM, 4 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RSE_FIQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RSE_FIQ
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[0]"></a>RSE_Reset</STRONG> (ARM, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[2]"></a>RSE_SWI</STRONG> (ARM, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[7]"></a>SO4</STRONG> (ARM, 0 bytes, Stack size unknown bytes, startup.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> startup.o(RESET)
+</UL>
+<P><STRONG><a name="[9]"></a>RSI_teclado</STRONG> (ARM, 0 bytes, Stack size unknown bytes, prac5.o(codigo))
+<BR>[Address Reference Count : 1]<UL><LI> prac5.o(codigo)
+</UL>
+<P><STRONG><a name="[a]"></a>RSI_timer</STRONG> (ARM, 0 bytes, Stack size unknown bytes, prac5.o(codigo))
+<BR>[Address Reference Count : 1]<UL><LI> prac5.o(codigo)
+</UL><P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

@@ -1,0 +1,10 @@
+LR_IROM1 0x00000000 0x00020000  {  ; load region
+  ER_IROM1 0x00000000 {
+    Startup.o (+RO)
+  }
+}
+LR_IRAM1 0x40000000 0x00008000  {  ; load region
+  ER_IRAM1 0x40000000 {
+    * (+RO +RW +ZI)
+  }
+}
